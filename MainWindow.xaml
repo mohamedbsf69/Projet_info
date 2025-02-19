@@ -10,9 +10,13 @@
         Width="450"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <ListBox>
-
-
+        <ListBox
+            x:Name="Liste1">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Label Content="{Binding Nom}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
         </ListBox>
     </Grid>
 </Window>
